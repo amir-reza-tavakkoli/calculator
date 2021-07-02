@@ -12,7 +12,7 @@ function clearAll(input_id) {
 function calculateAll() {
     let input_id = "result";
     var inputVal = document.getElementById("field").value;
-    let x = eval(inputVal);
-    if (x !== undefined) document.getElementById(input_id).setAttribute('value', x);
+    let evaluated = eval(inputVal);
+    if (evaluated !== undefined) document.getElementById(input_id).setAttribute('value', evaluated);
 
 }
