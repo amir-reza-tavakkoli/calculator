@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="main.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <button id="1" onclick="getInputValue('1')">1</button>
+    <button id="2" onclick="getInputValue('2')">2</button>
+    <button id="3" onclick="getInputValue('3')">3</button>
+    <button id="4" onclick="getInputValue('4')">4</button>
+    <button id="5" onclick="getInputValue('5')">5</button>
+    <button id="6" onclick="getInputValue('6')">6</button>
+    <button id="7" onclick="getInputValue('7')">7</button>
+    <button id="8" onclick="getInputValue('8')">8</button>
+    <button id="9" onclick="getInputValue('9')">9</button>
+    <button id="0" onclick="getInputValue('0')">0</button>
+    <button id="(" onclick="getInputValue('(')">(</button>
+    <button id=")" onclick="getInputValue(')')">)</button>
+    <button id="add" onclick="getInputValue('+')">+</button>
+    <button id="subtract" onclick="getInputValue('-')">-</button>
+    <button id="multiply" onclick="getInputValue('*')">*</button>
+    <button id="divide" onclick="getInputValue('/')">/</button>
+    <button id="submit" onclick="calculateAll();">calculate</button>
+    <button id="clear" onclick="clearAll('field');clearAll('result');">clear</button>
+    <br>
+    <label for="field">input</label>
+    <input type="text" name="" id="field" value="" readonly>
+    <label for="result">output</label>
+    <input type="result" name="" id="result" value="" readonly>
+</body>
+
+</html>
